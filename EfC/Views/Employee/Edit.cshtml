@@ -1,0 +1,20 @@
+﻿@model Employees;
+@{
+    ViewData["Title"] = "Edit";
+}
+<form asp-controller="Employee" asp-action="Edit" method="post">
+    <div class="mb-3">
+        <span class=" text-danger" asp-validation-for="Name"></span>
+        <input type="text" class="form-control" asp-for="Name" placeholder="Enter your  name" />
+    </div>
+    <div class="mb-3">
+        <span class="text-danger" asp-validation-for="Salary"></span>
+        <input class="form-control" asp-for="Salary" placeholder="Enter your Salary" />
+    </div>
+    <div>
+        <input type="submit" value="submit" />
+
+    </div>
+
+
+</form>
